@@ -73,8 +73,9 @@ class News(object):
 
     def days_1percenterrors(self):
 
-        # List of days when greater than 1% of requests lead to errors. Generate
-        # the date in month, day, year format along with percentage value.
+        # List of days when greater than 1% of requests lead to errors.
+        # Generate the date in month, day, year format along with percentage
+        # value.
         self.cursor.execute("""SELECT to_char(day, 'Month DD, YYYY') "day",
             ROUND(percent_total, 1) FROM (SELECT date_trunc('day', time) "day",
             ((SUM(CASE WHEN status != '200 OK' THEN 1 ELSE 0 END) * 100)::
