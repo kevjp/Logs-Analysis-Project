@@ -6,6 +6,8 @@
 
 [Install](#install)
 
+[Views](#views)
+
 [Examples of use](#examples-of-use)
 
 [Contributing](#contributing)
@@ -33,6 +35,12 @@ Requires the following python modules to be installed:
 Install the following python file by cloing the Logs-Analysis-Project repository on to your local system
 
 `$ git clone https://github.com/kevjp/Logs-Analysis-Project.git`
+
+## Views
+
+The python script logsanalysis.py generates the Postgresql view log_article_join which is a join between the log table and the article table using the query:
+`CREATE VIEW log_article_join AS SELECT path, title, author
+            FROM log, articles WHERE path = CONCAT('/article/', slug)`
 
 ## Examples of use
 
