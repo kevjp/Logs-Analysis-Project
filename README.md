@@ -38,7 +38,7 @@ Install the following python file by cloing the Logs-Analysis-Project repository
 
 ## Views
 
-The python script logsanalysis.py generates the Postgresql view log_article_join which is a join between the log table and the article table using the query:
+The python script logsanalysis.py generates the Postgresql view log_article_join which is a join between the log table and the articles table using the query:
 `CREATE VIEW log_article_join AS SELECT path, title, author
             FROM log, articles WHERE path = CONCAT('/article/', slug)`
 
