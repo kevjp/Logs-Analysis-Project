@@ -16,7 +16,12 @@
 
 
 ## Logs-Analysis-Project
-Logs Analysis Project generated as part of Full Stack Udacity Nanodegree. Provides information regarding news database including:
+Logs Analysis Project generated as part of Full Stack Udacity Nanodegree. Provides information regarding news database. The database includes three tables called authors, articles and log:
+ * The authors table includes information about the authors of articles.
+ * The articles table includes the articles themselves.
+ * The log table includes one entry for each time a user has accessed the site.
+
+The python script logsanalysis.py calculates the following log information from the live database:
  * The top 3 accessed articles see function top3articles
  * A list of most accessed authors see function mostpopularauthors
  * A List of days when greater than 1% of requests lead to errors see function days_1percenterrors
@@ -44,6 +49,7 @@ The python script logsanalysis.py generates the Postgresql view log_article_join
 
 ## Examples of use
 
+To run this code you will need to download the news database. Please request a copy of the database from kevin@ryancodingdesign.com. 
 `$ python logsanalysis.py`
 
 ## Contributing
