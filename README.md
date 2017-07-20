@@ -15,9 +15,9 @@
 
 ## Logs-Analysis-Project
 Logs Analysis Project generated as part of Full Stack Udacity Nanodegree. Provides information regarding news database including:
-    * The top 3 accessed articles see function top3articles
-    * A list of most accessed authors see function mostpopularauthors
-    * A List of days when greater than 1% of requests lead to errors see function days_1percenterrors
+ * The top 3 accessed articles see function top3articles
+ * A list of most accessed authors see function mostpopularauthors
+ * A List of days when greater than 1% of requests lead to errors see function days_1percenterrors
 
 ## Requirements
 Requires python 2.7 to be installed
